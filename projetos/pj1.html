@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loteria Virtual</title>
+    <link rel="short real icon" href="../images/outros/p.png">
+    <link rel="stylesheet" href="../css/pj1.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <img src="../images/outros/p.png" alt="P">
+        <hgroup>
+            <h1>Pedro Neto</h1>
+        </hgroup>
+        <menu>
+            <ul id="menu">
+                <li><a href="../index.html">&lt Voltar</a></li>
+                <li><a id="download" href="../downloads/projeto1_loteria.zip" download="loteria_virtual">Baixar</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <section class="container">
+        <div class="slogan">
+            <h1>Loteria Virtual</h1>
+            <h3>Teste sua sorte</h3>
+        </div><br>
+        <h4>Insira os números desejados</h4>
+        <div class="numbers">
+            <input type="number" name="num1" id="num1" onchange="addToList(value,1)">
+            <input type="number" name="num2" id="num2" onchange="addToList(value,2)">
+            <input type="number" name="num3" id="num3" onchange="addToList(value,3)">
+            <input type="number" name="num4" id="num4" onchange="addToList(value,4)">
+            <input type="number" name="num5" id="num5" onchange="addToList(value,5)">
+            <input type="number" name="num6" id="num6" onchange="addToList(value,6)">
+        </div><br>
+        <button type="button" name="button" onclick="verificarAcertos()">Sortear</button>
+    </section>
+
+    <section class="resultado">
+        <div id="results">
+            <p id="lista"></p>
+        </div><br>
+        <p id="total_Acertos"></p>
+    </section>
+
+    <footer id="rodape">
+        <div class="rdp">
+            <nav class="n1">
+                <h3>Pedro Neto</h3>
+                <ul>
+                    <li><a href="../index.html"><img src="../images/icons/home.png" alt="home" id="home" onmouseover="in_home()" onmouseout="out_home()"></a></li>
+                </ul>
+            </nav>
+            <nav class="n2">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/pbg.neto/?hl=pt-br" target="_blank"><img src="../images/icons/instagram.png" alt="instagram" id="ins" onmouseover="in_ins()" onmouseout="out_ins()"></a></li>
+                    <li><a href="https://twitter.com/PedroBG_Neto" target="_blank"><img src="../images/icons/twitter.png" alt="twitter" id="twi" onmouseover="in_twi()" onmouseout="out_twi()"></a></li>
+                    <li><a href="https://discord.gg/v3r84DK" target="_blank"><img src="../images/icons/discord.png" alt="discord" id="dis" onmouseover="in_dis()" onmouseout="out_dis()"></a></li>
+                    <li><a href="https://open.spotify.com/user/22ljhlejgkl7aqiwhg2vjlphq?si=n8eR8CvyRx2YuLlamHj0XQ" target="_blank"><img src="../images/icons/spotify.png" alt="spotify" id="spo" onmouseover="in_spo()" onmouseout="out_spo()"></a></li>
+                    <li><a href="https://br.op.gg/summoner/userName=NickSilv" target="_blank"><img src="../images/icons/opgg.png" alt="op.gg" id="opg" onmouseover="in_opg()" onmouseout="out_opg()"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>Copyright &copy; 2020 - by Pedro Neto</p>
+    </footer>
+
+	<script type="text/javascript" src="../js/pj1.js"></script>
+</body>
+</html>

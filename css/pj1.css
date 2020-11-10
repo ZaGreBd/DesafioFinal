@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body, ul, p, input, button{
+	padding: 0px;
+	list-style: none;
+	font-size: 1.2rem;
+	font-family: 'DM Mono', monospace;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+/*Fixado*/
+header{
+	position: fixed;
+	z-index: 1;
+	width: 100vw;
+	height: 150px;
+}
+
+section.container{
+	position: relative;
+	top: 200px;
+}
+
+section.resultado{
+	position: relative;
+	top: 250px;
+}
+/*Fim do Fixado*/
+
+
+/*Rolagem*/
+::-webkit-scrollbar{
+	width: 6px;
+	height: 6px;
+}
+ 
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent, #0F222D);
+	border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: linear-gradient(transparent, #191970)
+}
+/*Fim da Rolagem*/
+
+
+/*Header*/
+hgroup{
+	position: absolute;
+	left: 120px;
+}
+
+header{
+	background: #0F222D;
+	display: flex; /*Cada parte do lado da outra*/
+	flex-wrap: wrap; /*Tela menor = Um embaixo do outro*/
+	justify-content: space-between;/*Espaçamento entre os itens*/
+	align-items: center;/*Alinhar os itens*/
+}
+
+header img{
+	height: 120px;
+	width: 120px;
+}
+
+header h1{
+	color: white;
+	font-family: 'Balsamiq Sans', cursive;
+}
+/*Fim do Header*/
+
+
+/*Menu*/
+#menu{
+	display: flex;
+}
+
+#menu ul{
+	text-transform: uppercase; /*Maiúsculo*/
+	position: absolute;
+	top: 0px;
+}
+
+#menu li{
+	margin-left: 10px;
+	color: white;
+	display: inline-block; /*Um do lado do outro*/
+	margin: 4px; /*Espaço entre os botões - Fora do objeto*/
+	font-size: 1.1em;
+	font-family: 'DM Mono', monospace;
+	transition: color 1s; /*Cor do botão*/
+	transition: background-color 1s;
+}
+
+#menu a{
+	padding: 15px;
+	transition: color 1s; /*Cor do botão*/
+	transition: background-color 1s;
+}
+
+#menu li a{
+	display: block;
+}
+
+#menu a:hover{
+	background-color: white;
+	color: #0F222D;
+}
+/*Fim do Menu*/
+
+
+/*Container*/
+.container{
+	padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #b0e8fc;
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+.container .slogan h1{
+    font-size: 2.5em;
+    text-shadow: 1px 1px 50px black;
+}
+
+.container .slogan h3{
+    font-size: 2em;
+    font-weight: lighter;
+    padding-bottom: 25px;
+    text-shadow: 1px 1px 70px black;
+}
+
+.container h4{
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
+
+.container .numbers input{
+    max-width: 3em;
+    font-size: 2.5em;
+    border-radius: 30px;
+}
+
+.container .numbers input:focus{
+    background: rgb(152, 194, 194);
+    outline: 0;
+}
+
+.container button{
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 2em;
+    background-color: #b0e8fc;
+    box-shadow: 1px 1px 10px black;
+}
+
+.container button:hover{
+    font-size: 2em;
+    background-color: #d2f1fc;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+/*Fim do Container*/
+
+
+/*Resultado*/
+.resultado{
+	padding-top: 20px;
+	display: flex;
+    flex-direction: column;
+    background-color: #457794;
+    color: white;
+    align-items: center;
+}
+
+.resultado #result{
+    display: inline-block;
+}
+/*Fim do Resultado*/
+
+
+/*Rodapé*/
+#rodape{
+	background-color: #191970;
+	color: white;
+	position: relative;
+	top: 300px;
+}
+
+#rodape a{
+	color: #A9A9A9;
+	font-family: 'DM Mono', monospace;
+	padding-right: 5px;
+}
+
+#rodape p{
+	padding-top: 50px;
+	text-align: center;
+	font-family: 'DM Mono', monospace;
+}
+
+#rodape h3{
+	text-align: center;
+	font-family: 'DM Mono', monospace;
+}
+
+#rodape .rdp{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#rodape nav{
+	padding-top: 15px;
+	display: block;
+}
+
+#rodape .n2 ul{
+	display: flex;
+	flex-direction: row;
+}
+
+#rodape ul img{
+	height: 50px;
+	width: 50px;
+}
+/*Fim do Rodapé*/
