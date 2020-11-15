@@ -23,7 +23,7 @@ a{
 
 
 /*Fixado*/
-header{
+header#cbclh{
 	position: fixed;
 	z-index: 1;
 	width: 100vw;
@@ -70,7 +70,7 @@ hgroup{
 	left: 120px;
 }
 
-header{
+header#cbclh{
 	background: #0F222D;
 	display: flex; /*Cada parte do lado da outra*/
 	flex-wrap: wrap; /*Tela menor = Um embaixo do outro*/
@@ -78,12 +78,12 @@ header{
 	align-items: center;/*Alinhar os itens*/
 }
 
-header img{
+header#cbclh img{
 	height: 120px;
 	width: 120px;
 }
 
-header h1{
+header#cbclh h1{
 	color: white;
 	font-family: 'Balsamiq Sans', cursive;
 }
@@ -91,17 +91,17 @@ header h1{
 
 
 /*Menu*/
-#menu{
+#mnu{
 	display: flex;
 }
 
-#menu ul{
+#mnu ul{
 	text-transform: uppercase; /*Maiúsculo*/
 	position: absolute;
 	top: 0px;
 }
 
-#menu li{
+#mnu li{
 	margin-left: 10px;
 	color: white;
 	display: inline-block; /*Um do lado do outro*/
@@ -112,17 +112,18 @@ header h1{
 	transition: background-color 1s;
 }
 
-#menu a{
+#mnu a{
+	color: white;
 	padding: 15px;
 	transition: color 1s; /*Cor do botão*/
 	transition: background-color 1s;
 }
 
-#menu li a{
+#mnu li a{
 	display: block;
 }
 
-#menu a:hover{
+#mnu a:hover{
 	background-color: white;
 	color: #0F222D;
 }
