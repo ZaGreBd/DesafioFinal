@@ -10,6 +10,8 @@
   "theme_color":"#0F222D",
   "orientation":"portrait",
   "description":"É um portfolio com algumas informações sobre mim, e alguns projetos que fiz.",
+  "related_applications":[],
+  "prefer_related_applications": false,
   "icons": [
    {
     "src": "images/favicon/android-icon-36x36.png",
@@ -52,10 +54,5 @@
    "sizes": "512x512",
    "type": "image/jpg"
    }
- ],
-  {
-    "related_applications":[],
-    "prefer_related_applications": false
-  }
- }
+ ]
 }
