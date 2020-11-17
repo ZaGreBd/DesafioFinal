@@ -1,0 +1,25 @@
+{
+  "lang":"pt.br",
+  "dir":"ltr",
+  "name":"Portfolio",
+  "short_name":"PP",
+  "start_url":"https://zagrebd.github.io/DesafioFinal/",
+  "display":"minimal-ui",
+  "scope":"/DesafioFinal/",
+  "background_color":"white",
+  "theme_color":"#0F222D",
+  "orientation":"portrait",
+  "description":"É um portfolio com algumas informações sobre mim, e alguns projetos que fiz.",
+  "icons":[
+    {
+      "src":"",
+      "sizes":"192x192",
+      "type":""
+    },
+    {
+      "src":"",
+      "sizes":"512x512",
+      "type":""
+    }
+  ]
+}

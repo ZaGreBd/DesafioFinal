@@ -40,7 +40,7 @@ debounce = function(func, wait, immediate) {
 };
 
 (function(){
-    var $target = $('.pj'),
+    var $target = $('.crd'),
        animationClass = 'animacao',
             offset = $(window).height() * 3/4
 
