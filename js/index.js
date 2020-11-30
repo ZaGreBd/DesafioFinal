@@ -1,28 +1,3 @@
-//Rolagem suave
-/*$('menu #mnu a').click(function(e){
-    e.preventDefault()
-
-    var id = $(this).attr('href'),
-        targetOffset = $(id).offset().top
-
-    $('html, body').animate({
-        scrollTop: targetOffset - 150
-    }, 500)
-})
-
-$('nav.n1 a').click(function(e){
-    e.preventDefault()
-
-    var id = $(this).attr('href'),
-        targetOffset = $(id).offset().top
-
-    $('html, body').animate({
-        scrollTop: targetOffset
-    }, 500)
-})*/
-//Fim da rolagem suave
-
-
 //Aniamações
 debounce = function(func, wait, immediate) {
 	var timeout;
@@ -114,3 +89,17 @@ function out_home(){
     document.getElementById('home').src = "images/icons/home.png"
 }
 //Fim do rodape
+
+//Início do Share
+function shareImage(titulo, texto, url) {
+	if (navigator.share) {
+		navigator.share({
+	    title: titulo,
+	    text: texto,
+	    url: url,
+	  })
+	    .then(() => console.log('Successful share'))
+	    .catch((error) => console.log('Error sharing', error));
+	}
+}
+//Fim do Share

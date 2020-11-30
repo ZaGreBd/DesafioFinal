@@ -1,4 +1,4 @@
-const cacheName = "portfolio-v1"
+const cacheName = "portfolio-v1.1"
 const files = [
   '/DesafioFinal/',
   '/DesafioFinal/index.html',
@@ -13,14 +13,22 @@ const files = [
 ]
 
 self.addEventListener('intall', function(evt){
+  console.log('install sw');
   evt.waitUntil(caches.open(cacheName).then(function(cache){
     console.log('colocando arquivos na cache')
-    cache.addAll(files)
-  }))
+      cache.addAll(files)
+    }))
 })
 
 self.addEventListener('activate', function(evt){
   console.log("activate sw")
+  evt.waitUntil(caches.keys().then(function(keys){
+    return Promise.all(
+      keys
+      .filter(key => key != cacheName)
+      .map(key => caches.delete(Key))
+    )
+  }))
 })
 
 self.addEventListener('fetch', function(evt){
@@ -28,6 +36,5 @@ self.addEventListener('fetch', function(evt){
   evt.respondWith(
     caches.match(evt.request).then(function(res){
       return res || fetch(evt.request)
-    })
-  )
+    }))
 })
