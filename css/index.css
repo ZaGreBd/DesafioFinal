@@ -65,28 +65,7 @@ section#ctt{
 
 
 /*Header*/
-hgroup{
-	position: absolute;
-	left: 120px;
-}
 
-header#cbclh{
-	background: #0F222D;
-	display: flex; /*Cada parte do lado da outra*/
-	flex-wrap: wrap; /*Tela menor = Um embaixo do outro*/
-	justify-content: space-between;/*Espaçamento entre os itens*/
-	align-items: center;/*Alinhar os itens*/
-}
-
-header#cbclh img{
-	height: 120px;
-	width: 120px;
-}
-
-header#cbclh h1{
-	color: white;
-	font-family: 'Balsamiq Sans', cursive;
-}
 /*Fim do Header*/
 
 
@@ -380,6 +359,7 @@ fieldset{
 	color: white;
 	position: relative;
 	top: 150px;
+	padding-bottom: 10px;
 }
 
 #rodape a{

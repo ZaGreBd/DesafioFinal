@@ -1,5 +1,5 @@
 //Rolagem suave
-$('menu #menu a').click(function(e){
+/*$('menu #mnu a').click(function(e){
     e.preventDefault()
 
     var id = $(this).attr('href'),
@@ -19,7 +19,7 @@ $('nav.n1 a').click(function(e){
     $('html, body').animate({
         scrollTop: targetOffset
     }, 500)
-})
+})*/
 //Fim da rolagem suave
 
 
