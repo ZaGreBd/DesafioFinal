@@ -65,7 +65,20 @@ section#ctt{
 
 
 /*Header*/
+a.navbar-brand{
+	cursor:text;
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 40px;
+}
 
+a.nav-link{
+	font-family: 'DM Mono', monospace;
+}
+
+#interface img.cbclh{
+		height: 120px;
+		width: 120px;
+}
 /*Fim do Header*/
 
 
@@ -236,7 +249,7 @@ section#ctt{
 	align-items: flex-end;
 }
 
-#prj img .card-img-top{
+#prj img.card-img-top img{
 	width: 300px;
 	height: 300px;
 }
