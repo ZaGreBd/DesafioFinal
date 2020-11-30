@@ -4,9 +4,12 @@ const files = [
   '/DesafioFinal/index.html',
   '/DesafioFinal/js/index.js',
   '/DesafioFinal/css/index.css',
-  "https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous",
-  "https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"
-
+  '/DesafioFinal/images/favicon.ico',
+  'https://code.jquery.com/jquery-3.2.1.slim.min.js',
+  'https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js',
+  'https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js',
+  'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons',
+  'https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css'
 ]
 
 self.addEventListener('intall', function(evt){
